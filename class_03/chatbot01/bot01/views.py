@@ -8,7 +8,7 @@ import copy
 
 def hello(request):
 
-	all_data = MyData.objects.all()
+	all_data = MyData.objects.filter(name="Name 01")[:n]
 	data = []
 
 	for dt in all_data:
