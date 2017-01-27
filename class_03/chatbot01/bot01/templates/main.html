@@ -12,5 +12,24 @@
 	<button type="submit">Submit</button>
 </form>
 
+
+<br>
+Information in the DataBase:<br>
+<table border="2">
+	<tr>
+		<th> Name </th>
+		<th> Institution </th>
+	</tr>
+
+	{% for dx in data %}
+	<tr>
+		<td>{{ dx.name }}</td>
+		<td>{{ dx.inst }}</td>
+	</tr>
+	{% endfor %}
+
+</table>
+
+
 </body>
 </html>
