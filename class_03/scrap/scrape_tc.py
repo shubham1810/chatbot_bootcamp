@@ -1,12 +1,12 @@
 import requests
 from bs4 import BeautifulSoup as BS
 
-# url = 'https://techcrunch.com/'
+url = 'https://techcrunch.com/'
 
-# r = requests.get(url)
-#html = r.text
+r = requests.get(url)
+html = r.text
 
-html = open('index.html').read()
+# html = open('index.html').read()
 
 soup = BS(html)
 
